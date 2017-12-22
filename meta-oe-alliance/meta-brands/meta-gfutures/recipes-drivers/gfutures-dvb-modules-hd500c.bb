@@ -1,0 +1,6 @@
+KV = "4.10.12"
+SRCDATE = "20170427"
+
+require gfutures-dvb-modules.inc
+SRC_URI[md5sum] = "6936ecd8521697137c74c52770dae701"
+SRC_URI[sha256sum] = "6ec5656e3cd5b73ff2e1a0fba953609223fc8b5a687079b12518519f721a6366"

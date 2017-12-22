@@ -1,0 +1,34 @@
+diff --git a/Makefile.am b/Makefile.am
+index b9687fc..a30c8b3 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -21,7 +21,6 @@ SUBDIRS = \
+ 	dreamirc \
+ 	dreammediathek \
+ 	dvdbackup \
+-	easyinfo \
+ 	easymedia \
+ 	ecasa \
+ 	eibox \
+@@ -60,13 +59,11 @@ SUBDIRS = \
+ 	ofdb \
+ 	orfat \
+ 	orfteletext \
+-	partnerbox \
+ 	permanentclock \
+ 	pipservicerelation \
+ 	podcast \
+ 	porncenter \
+ 	pushservice \
+-	quickbutton \
+ 	reconstructapsc \
+ 	reftopiconname \
+ 	remotetimer \
+@@ -131,7 +128,6 @@ SUBDIRS += \
+ 	mytube \
+ 	yttrailer \
+ 	webinterface \
+-	menusort \
+ 	pluginhider \
+ 	pluginsort 
+ endif
