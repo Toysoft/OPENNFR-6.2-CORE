@@ -6,14 +6,9 @@ PACKAGE_ARCH = "all"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
-BRANCH="master"
-BRANCH_openatv="responsive"
-BRANCH_openhdf="responsive"
-BRANCH_openspa="responsive"
-BRANCH_opendroid="responsive"
-BRANCH_opennfr="responsive"
-BRANCH_openvix="responsive"
-BRANCH_openbh="responsive"
+BRANCH="responsive"
+BRANCH_openeight="master"
+BRANCH_opennfr="master"
 
 DEPENDS = "python-cheetah-native"
 RDEPENDS_${PN} = "\
@@ -35,8 +30,8 @@ inherit gitpkgv distutils-openplugins gettext
 DISTUTILS_INSTALL_ARGS = "--root=${D} --install-lib=/usr/lib/enigma2/python/Plugins"
 
 SRCREV = "${AUTOREV}"
-PV = "1+git${SRCPV}"
-PKGV = "1+git${GITPKGV}"
+PV = "1.2+git${SRCPV}"
+PKGV = "1.2+git${GITPKGV}"
 
 SRC_URI = "git://github.com/E2OpenPlugins/e2openplugin-${MODULE}.git;protocol=git;branch=${BRANCH} \
            file://transcoding.py"
