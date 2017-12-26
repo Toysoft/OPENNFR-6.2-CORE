@@ -1,6 +1,6 @@
 #!/bin/bash
-OLD="http://dev.nachtfalke.biz/nfr/feeds/6.1/"
-NEW="http://dev.nachtfalke.biz/nfr/feeds/6.1_dev/"
+OLD="http://dev.nachtfalke.biz/nfr/feeds/6.2/"
+NEW="http://dev.nachtfalke.biz/nfr/feeds/6.2_dev/"
 DPATH="/etc/opkg/*.conf"
 TFILE="/tmp/out.tmp.$$"
 for f in $DPATH
