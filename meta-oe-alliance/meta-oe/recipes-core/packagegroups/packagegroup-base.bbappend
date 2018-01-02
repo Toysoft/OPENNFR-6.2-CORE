@@ -45,4 +45,5 @@ RDEPENDS_packagegroup-base-zeroconf += "\
 
 RDEPENDS_packagegroup-base += "\
     coreutils-truefalse \
-"
+    stb-hwclock \
+    fake-hwclock"
