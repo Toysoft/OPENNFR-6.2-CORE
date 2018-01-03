@@ -39,7 +39,6 @@ PROVIDES += " \
     enigma2-plugin-systemplugins-multitranscodingsetup \
     enigma2-plugin-extensions-ondemand \
     enigma2-plugin-extensions-fempa \
-    enigma2-plugin-extensions-lcd4linux \
     enigma2-plugin-extensions-remotechannelstreamconverter \
     ${@bb.utils.contains('MACHINE_FEATURES', 'legacykernel', '' , 'enigma2-plugin-systemplugins-wirelessaccesspoint', d)} \
     ${@bb.utils.contains('MACHINE', 'spark7162', 'enigma2-plugin-systemplugins-uniontunertype ' , ' ', d)} \
