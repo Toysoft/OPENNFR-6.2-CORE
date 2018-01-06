@@ -182,7 +182,7 @@ RDEPENDS_enigma2-plugin-extensions-dvdburn = "dvd+rw-tools dvdauthor mjpegtools 
 RDEPENDS_enigma2-plugin-systemplugins-hotplug = "hotplug-e2-helper"
 RDEPENDS_enigma2-plugin-systemplugins-fsblupdater = "python-distutils"
 
-inherit autotools-brokensep gitpkgv pkgconfig pythonnative
+inherit autotools-brokensep gitpkgv pkgconfig pythonnative upx-compress
 
 PV = "${IMAGE_VERSION}+git${SRCPV}"
 PKGV = "${IMAGE_VERSION}+git${GITPKGV}"

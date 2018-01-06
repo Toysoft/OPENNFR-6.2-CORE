@@ -40,7 +40,7 @@ THIRDPARTY_PLUGINS = " \
     enigma2-plugin-extensions-dvrproviderplayer_1.14_all.ipk \
     enigma2-plugin-extensions-ehue_0.2-r0_all.ipk \
     enigma2-plugin-extensions-filesearchfs_3.0_all.ipk \
-    enigma2-plugin-extensions-focusonline_1.1rc3_all.ipk \
+    enigma2-plugin-extensions-focusonline_1.1rc4_all.ipk \
     enigma2-plugin-extensions-fragmutti_1.0rc2_all.ipk \
     enigma2-plugin-extensions-gmailreader-oe2.0_1.3_all.ipk \
     enigma2-plugin-extensions-googlenewsreader_1.0_mips32el.ipk \
@@ -56,6 +56,7 @@ THIRDPARTY_PLUGINS = " \
     enigma2-plugin-extensions-mediainfo_3.0.2_all.ipk \
     enigma2-plugin-extensions-moviebrowser_3.7rc1_all.ipk \
     enigma2-plugin-extensions-mp3browser_2.0rc1_all.ipk \
+    enigma2-plugin-extensions-mspfs_1.05_all.ipk \
     enigma2-plugin-extensions-netspeedtest_1.0rc1_all.ipk \
     ${@bb.utils.contains('MACHINE_BRAND', 'Vu+', '' , 'enigma2-plugin-extensions-openopera_1.0-r0_mips32el.ipk', d)} \
     enigma2-plugin-extensions-opkg-tools_1.3_mipsel.ipk \
@@ -63,7 +64,7 @@ THIRDPARTY_PLUGINS = " \
     enigma2-plugin-extensions-piconmanager_2.2-20150329-r0_all.ipk \
     enigma2-plugin-extensions-piconsupdater_0.3.7_mips32el.ipk \
     enigma2-plugin-extensions-picturecenterfs_8.16_all.ipk \
-    enigma2-plugin-extensions-planerfs_7.19_all.ipk \
+    enigma2-plugin-extensions-planerfs_7.20_all.ipk \
     enigma2-plugin-extensions-pluginspanel_1.0_r01_all.ipk \
     enigma2-plugin-extensions-pluginupdater_0.1r2_all.ipk \
     enigma2-plugin-extensions-pravoslavietv_0.2_all.ipk \
@@ -91,14 +92,14 @@ THIRDPARTY_PLUGINS = " \
     enigma2-plugin-extensions-vhannibalautosettings_1.1_mips32el.ipk \
     enigma2-plugin-extensions-vuplusforum_0.8rc2_all.ipk \
     enigma2-plugin-extensions-webmedia_14.0_r0_all.ipk \
-    enigma2-plugin-extensions-webradiofs_16.02_all.ipk \
+    enigma2-plugin-extensions-webradiofs_16.06_all.ipk \
     enigma2-plugin-extensions-wikipedia_2.3rc2_all.ipk \
     enigma2-plugin-extensions-wwech_1.03_all.ipk \
     enigma2-plugin-extensions-xbmcaddons_8.1_r0_all.ipk \
     enigma2-plugin-extensions-xbmcwetter_1.4rc1_all.ipk \
     enigma2-plugin-extensions-zdfnewmediathek_2.1rc11_all.ipk \
     enigma2-plugin-systemplugins-bouquetsprotection_0.2-rc1_all.ipk \
-    enigma2-plugin-systemplugins-channelselectionnavigator_1.2_mipsel.ipk \
+    enigma2-plugin-systemplugins-channelselectionnavigator_1.5_mipsel.ipk \
     enigma2-plugin-systemplugins-extnumberzap_1.20_all.ipk \
     enigma2-plugin-systemplugins-recinfobar_1.22rc2_mips32el.ipk \
     enigma2-plugin-picons-snp-full.400x240-400x240.light.on.transparent_2017-08-30--10-28-13_all.ipk \
