@@ -53,5 +53,5 @@ RDEPENDS_${PN} = "\
     enigma2-plugin-drivers-usbserial \
     ${@bb.utils.contains("MACHINE_FEATURES", "dreamboxv1", "", "ofgwrite", d)} \
     ${@bb.utils.contains("TUNE_FEATURES", "armv", "glibc-compat", "", d)} \
-    ${@bb.utils.contains_any("FLASHSIZE", "64", "", " \
+    ${@bb.utils.contains_any("FLASHSIZE", "64", "", " "\
     "
