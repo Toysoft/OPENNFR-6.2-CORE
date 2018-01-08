@@ -12,7 +12,6 @@ PR = "r0"
 inherit packagegroup
 
 RRECOMMENDS_${PN} = "\
-	extra-plugins \
 	curlftpfs \
 	cdfs \
     	libbluray \

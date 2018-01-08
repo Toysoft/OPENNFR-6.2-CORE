@@ -8,10 +8,14 @@ ALLOW_EMPTY_${PN} = "1"
 PV = "${IMAGE_VERSION}"
 PR = "r0"
 
+PACKAGE_ARCH = "${MACHINE_ARCH}"
+
 inherit packagegroup
 
 RDEPENDS_${PN} = "\
     ca-certificates \
+    flip \
+    hddtemp \
     oe-alliance-base \
     opennfr-enigma2 \
     opennfr-bootlogo \
@@ -21,8 +25,6 @@ RDEPENDS_${PN} = "\
     openssh-sftp-server \
     ${@bb.utils.contains("MACHINE_FEATURES", "smallflash", "", "iproute2 ", d)} \
     ${@bb.utils.contains("MACHINE_FEATURES", "smallflash", "", "ntfs-3g ", d)} \  
-    hddtemp \
-    virtual/cron \
     python-imaging \
     python-cfscrape \
     python-js2py \
@@ -44,15 +46,12 @@ RDEPENDS_${PN} = "\
     librtmp \
     rtmpdump \
     iperf3 \
+    ntfs-3g \
     packagegroup-base-smbfs-client \
     packagegroup-base-smbfs-server \
     packagegroup-base-nfs \
     enigma2-plugin-drivers-usbserial \
-    enigma2-plugin-extensions-openwebif-terminal \
-    enigma2-plugin-extensions-openwebif-themes \
-    enigma2-plugin-extensions-openwebif-webtv \
-    enigma2-plugin-extensions-openwebif-vxg \  
-    bash \
     ${@bb.utils.contains("MACHINE_FEATURES", "dreamboxv1", "", "ofgwrite", d)} \
     ${@bb.utils.contains("TUNE_FEATURES", "armv", "glibc-compat", "", d)} \
+    ${@bb.utils.contains_any("FLASHSIZE", "64", "", " \
     "

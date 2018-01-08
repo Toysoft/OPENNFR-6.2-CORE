@@ -21,11 +21,20 @@ IMAGE_INSTALL = "opennfr-base \
     packagegroup-base-nfs \
     ", d)} \
     "
-    
-export IMAGE_BASENAME = "opennfr-image"
-IMAGE_LINGUAS = ""
+# Some additional comfort on the shell: Pre-install nano on boxes with 128 MB or more:
+IMAGE_INSTALL += "${@bb.utils.contains_any("FLASHSIZE", "64 96", "", "nano", d)}"
 
-IMAGE_FEATURES += "package-management"	
+# ... plus mc and helpers on 256 MB or more:
+IMAGE_INSTALL += "${@bb.utils.contains_any("FLASHSIZE", "64 96 128", "", "mc mc-fish mc-helpers", d)}"
+
+export IMAGE_BASENAME = "openatv-image"
+# 64 or 128MB of flash: No language files, above: German and French
+IMAGE_LINGUAS  = "${@bb.utils.contains_any("FLASHSIZE", "64 96 128", "", "de-de fr-fr", d)}"
+
+# Add more languages for 512 or more MB of flash:
+IMAGE_LINGUAS += "${@bb.utils.contains_any("FLASHSIZE", "64 96 128 256", "", "es-es it-it nl-nl pt-pt", d)}"
+
+IMAGE_FEATURES += "package-management"
 
 inherit image
 
@@ -144,11 +153,6 @@ image_preprocess() {
 					mv ${IMAGE_ROOTFS}/etc/opkg/secret-feed-arm.conf ${IMAGE_ROOTFS}/etc/opkg/secret-feed.conf 					
 				fi
 			cd $curdir
-		
-    # Speedup boot by reducing the host key size. The time it takes grows
-    # exponentially by key size, the default is 2k which takes several
-    # seconds on most boxes.
-    echo 'DROPBEAR_RSAKEY_ARGS="-s 1024"' >> ${IMAGE_ROOTFS}${sysconfdir}/default/dropbear		
 }
 
 IMAGE_PREPROCESS_COMMAND += "image_preprocess; "
