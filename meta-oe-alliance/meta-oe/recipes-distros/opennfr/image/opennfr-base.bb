@@ -14,7 +14,6 @@ inherit packagegroup
 
 RDEPENDS_${PN} = "\
     ca-certificates \
-    flip \
     hddtemp \
     oe-alliance-base \
     opennfr-enigma2 \
@@ -24,7 +23,6 @@ RDEPENDS_${PN} = "\
     opennfr-settings \    
     openssh-sftp-server \
     ${@bb.utils.contains("MACHINE_FEATURES", "smallflash", "", "iproute2 ", d)} \
-    ${@bb.utils.contains("MACHINE_FEATURES", "smallflash", "", "ntfs-3g ", d)} \  
     python-imaging \
     python-cfscrape \
     python-js2py \
