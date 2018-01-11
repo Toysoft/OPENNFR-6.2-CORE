@@ -76,7 +76,7 @@ THIRDPARTY_PLUGINS = " \
     enigma2-plugin-extensions-skyrecorder_1.7.1_all.ipk \
     enigma2-plugin-extensions-songs-to_0.1_mips32el.ipk \
     enigma2-plugin-extensions-spiegelonline_2.8rc11_all.ipk \
-    enigma2-plugin-extensions-spinnerselector_2.1rc8_mips32el.ipk \
+    enigma2-plugin-extensions-spinnerselector_2.1rc9_mips32el.ipk \
     enigma2-plugin-extensions-sport1ticker_1.3_all.ipk \
     enigma2-plugin-extensions-sundtekcontrolcenter_20161213-2_all.ipk \
     enigma2-plugin-extensions-tectimetv_3.1_all.ipk \
@@ -92,10 +92,9 @@ THIRDPARTY_PLUGINS = " \
     enigma2-plugin-extensions-vhannibalautosettings_1.1_mips32el.ipk \
     enigma2-plugin-extensions-vuplusforum_0.8rc2_all.ipk \
     enigma2-plugin-extensions-webmedia_14.0_r0_all.ipk \
-    enigma2-plugin-extensions-webradiofs_16.06_all.ipk \
+    enigma2-plugin-extensions-webradiofs_16.12_all.ipk \
     enigma2-plugin-extensions-wikipedia_2.3rc2_all.ipk \
     enigma2-plugin-extensions-wwech_1.03_all.ipk \
-    enigma2-plugin-extensions-xbmcaddons_8.1_r0_all.ipk \
     enigma2-plugin-extensions-xbmcwetter_1.4rc1_all.ipk \
     enigma2-plugin-extensions-zdfnewmediathek_2.1rc11_all.ipk \
     enigma2-plugin-systemplugins-bouquetsprotection_0.2-rc1_all.ipk \

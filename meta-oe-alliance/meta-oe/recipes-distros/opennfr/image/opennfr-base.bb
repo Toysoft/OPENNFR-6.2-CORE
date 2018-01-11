@@ -22,7 +22,6 @@ RDEPENDS_${PN} = "\
     opennfr-cam \
     opennfr-settings \    
     openssh-sftp-server \
-    ${@bb.utils.contains("MACHINE_FEATURES", "smallflash", "", "iproute2 ", d)} \
     python-imaging \
     python-cfscrape \
     python-js2py \
@@ -44,12 +43,14 @@ RDEPENDS_${PN} = "\
     librtmp \
     rtmpdump \
     iperf3 \
-    ntfs-3g \
     packagegroup-base-smbfs-client \
     packagegroup-base-smbfs-server \
     packagegroup-base-nfs \
     enigma2-plugin-drivers-usbserial \
-    ${@bb.utils.contains("MACHINE_FEATURES", "dreamboxv1", "", "ofgwrite", d)} \
     ${@bb.utils.contains("TUNE_FEATURES", "armv", "glibc-compat", "", d)} \
-    ${@bb.utils.contains_any("FLASHSIZE", "64", "", "", d)} \ 
+    ${@bb.utils.contains_any("FLASHSIZE", "64", "", " \
+        iproute2 \
+        ntfs-3g \
+    ", d)} \
+    "
     "
