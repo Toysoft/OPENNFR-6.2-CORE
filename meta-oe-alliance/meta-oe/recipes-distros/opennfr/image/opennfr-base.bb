@@ -53,4 +53,3 @@ RDEPENDS_${PN} = "\
         ntfs-3g \
     ", d)} \
     "
-    "
