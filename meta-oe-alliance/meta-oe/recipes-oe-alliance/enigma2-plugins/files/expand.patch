@@ -1,6 +1,6 @@
-diff --git a/git/src/EPGImport/ExpandableSelectionList.py b/git/src/EPGImport/ExpandableSelectionList.py
---- a/git/src/EPGImport/ExpandableSelectionList.py
-+++ b/git/src/EPGImport/ExpandableSelectionList.py
+diff --git a/EPGImport/ExpandableSelectionList.py b/EPGImport/ExpandableSelectionList.py
+--- a/EPGImport/ExpandableSelectionList.py
++++ b/EPGImport/ExpandableSelectionList.py
 @@ -15,11 +15,11 @@
  
  def loadSettings():
