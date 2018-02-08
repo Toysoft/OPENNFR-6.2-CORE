@@ -68,6 +68,7 @@ IMAGE_CMD_ubi_append = "\
     rm -f ${DEPLOY_DIR_IMAGE}/.ubifs; \
     rm -f ${DEPLOY_DIR_IMAGE}/.manifest; \
     rm -Rf ${IMAGEDIR}; \
+    cp ${DEPLOY_DIR_IMAGE}/*.zip /home/harry/OPENNFR6.3/image-zips/; \ 
     "
 
 MACHINE_FEATURES += "3dtv alsa hdmicec switchoff bootsplash omb feature1"
