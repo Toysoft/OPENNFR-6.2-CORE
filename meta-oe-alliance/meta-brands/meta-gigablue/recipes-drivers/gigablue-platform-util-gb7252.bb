@@ -1,8 +1,8 @@
 require gigablue-platform-util.inc
 
-SRCDATE = "20180112"
+SRCDATE = "20180216"
 
-KV = "3.14.28"
+KV = "4.1.20"
 
-SRC_URI[md5sum] = "7ec10d19f08bd7decac181ab5770bd5a"
-SRC_URI[sha256sum] = "48c753f444b2e277adb385051bacede4618757deb50cc50035dea2781fd40a47"
+SRC_URI[md5sum] = "364ae648eae8c6f66301c2d6369f02ed"
+SRC_URI[sha256sum] = "7556834898b86c47d2b9dcfa6e1896704695c3c348ca8952c9ec2d1a5fcbaa31"

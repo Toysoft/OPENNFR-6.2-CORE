@@ -31,6 +31,7 @@ RDEPENDS_${PN} = " \
     enigma2-plugin-security-firewall \
     enigma2-plugin-extensions-enigmalight \
     ${@bb.utils.contains("DISTRO_FEATURES", "directfb", "enigma2-plugin-extensions-openairplay", "", d)} \
+    enigma2-plugin-extensions-mediatomb \
     enigma2-plugin-extensions-dreamplex \
     enigma2-plugin-extensions-et-portal \
     enigma2-plugin-extensions-moviearchiver \
