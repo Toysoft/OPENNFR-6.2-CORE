@@ -43,7 +43,7 @@ do_install() {
     ${@bb.utils.contains("MACHINE_FEATURES", "gigabluelcd400", "install -m 0644 lcdcomplete400.bin ${D}/usr/share/lcdcomplete.bin" , "", d)}
     ${@bb.utils.contains("MACHINE_FEATURES", "gigabluelcd220", "install -m 0644 lcdwaitkey220.bin ${D}/usr/share/lcdwaitkey.bin" , "", d)}
     ${@bb.utils.contains("MACHINE_FEATURES", "gigabluelcd220", "install -m 0644 lcdwarning220.bin ${D}/usr/share/lcdwarning.bin" , "", d)}
-    ${@bb.utils.contains("MACHINE_FEATURES", "gigabluelcd400", "install -m 0644 lcdcomplete220.bin ${D}/usr/share/lcdcomplete.bin" , "", d)}
+    ${@bb.utils.contains("MACHINE_FEATURES", "gigabluelcd220", "install -m 0644 lcdcomplete220.bin ${D}/usr/share/lcdcomplete.bin" , "", d)}
 }
 
 
