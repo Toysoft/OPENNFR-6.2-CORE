@@ -1,4 +1,4 @@
-PR .= ".2"
+PR .= ".3"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/${P}:"
 
@@ -6,16 +6,13 @@ RDEPENDS_${PN}_append = " sdparm bash"
 RPROVIDES_${BPN} += "softcam-support cardserver-support"
 RREPLACES_${BPN} += "softcam-support cardserver-support"
 RCONFLICTS_${BPN} += "softcam-support cardserver-support"
+RRECOMMENDS_${PN} = ""
 
 SRC_URI += "file://hotplug.sh \
             file://nocam.sh \
             file://nocard.sh \
             file://fastrestore_openatv.sh \
 "
-
-# fix build issue with initd-functions
-RRECOMMENDS_${PN}_remove = "${PN}-functions"
-
 
 do_install_append() {
     # umountnfs should run before network stops (which is at K40)
