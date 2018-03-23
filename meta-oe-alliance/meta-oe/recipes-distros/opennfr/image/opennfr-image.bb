@@ -141,6 +141,11 @@ image_preprocess() {
 					mv ${IMAGE_ROOTFS}/etc/opkg/secret-feed-arm.conf ${IMAGE_ROOTFS}/etc/opkg/secret-feed.conf 					
 				fi
 			cd $curdir
+			
+    # Speedup boot by reducing the host key size. The time it takes grows
+    # exponentially by key size, the default is 2k which takes several
+    # seconds on most boxes.
+    echo 'DROPBEAR_RSAKEY_ARGS="-s 1024"' >> ${IMAGE_ROOTFS}${sysconfdir}/default/dropbear				
 }
 
 IMAGE_PREPROCESS_COMMAND += "image_preprocess; "
