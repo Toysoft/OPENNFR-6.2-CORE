@@ -11,7 +11,7 @@ DEPENDS = "tslib mpfr gmp"
 SRCREV = "${AUTOREV}"
 PV = "${IMAGE_VERSION}+gitr${SRCPV}"
 PKGV = "${IMAGE_VERSION}+gitr${GITPKGV}"
-PR = "r19"
+PR = "r1"
 
 SRC_URI="git://github.com/oe-alliance/3rdparty-plugins.git;protocol=git"
 
@@ -51,10 +51,10 @@ THIRDPARTY_PLUGINS = " \
     ${@bb.utils.contains("TARGET_ARCH", "mipsel", "enigma2-plugin-extensions-isettinge2_3.4.1-oe2.0-all-mips_all.ipk" , "", d)} \
     ${@bb.utils.contains("TARGET_ARCH", "arm", "enigma2-plugin-extensions-isettinge2-3.3.9-oe2.0-all-arm.ipk" , "", d)} \
     enigma2-plugin-extensions-kicker_3.5rc13_all.ipk \
-    enigma2-plugin-extensions-kino_1.8_all.ipk \
+    enigma2-plugin-extensions-kino_1.8rc1_all.ipk \
     enigma2-plugin-extensions-livefootball_7.1_all.ipk \
     enigma2-plugin-extensions-mediainfo_3.0.5_all.ipk \
-    enigma2-plugin-extensions-moviebrowser_3.7rc2_all.ipk \
+    enigma2-plugin-extensions-moviebrowser_3.7rc3_all.ipk \
     enigma2-plugin-extensions-mp3browser_2.0rc1_all.ipk \
     enigma2-plugin-extensions-mspfs_1.06_all.ipk \
     enigma2-plugin-extensions-netspeedtest_1.0rc1_all.ipk \
