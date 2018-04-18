@@ -62,6 +62,12 @@ image_preprocess() {
 			rm -rf ${IMAGE_ROOTFS}/etc/network/interfaces-neu
 			cd $curdir
 
+			cd ${IMAGE_ROOTFS}/usr/share/enigma2/po/de/LC_MESSAGES		
+			rm -rf ${IMAGE_ROOTFS}/usr/share/enigma2/po/de/LC_MESSAGES/enigma2.mo
+			mv ${IMAGE_ROOTFS}/usr/share/enigma2/po/de/LC_MESSAGES/enigma2-neu.mo ${IMAGE_ROOTFS}/usr/share/enigma2/po/de/LC_MESSAGES/enigma2.mo
+			rm -rf ${IMAGE_ROOTFS}/usr/share/enigma2/po/de/LC_MESSAGES/enigma2-neu.mo
+			cd $curdir
+
 			cd ${IMAGE_ROOTFS}/usr/lib
 			ln -s libbz2.so.1.0.6 libbz2.so.0.0.0 || true
 			ln -s libcrypto.so.1.0.2 libcrypto.so.0.9.8 || true

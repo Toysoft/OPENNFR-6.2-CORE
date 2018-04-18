@@ -9,7 +9,7 @@ SRCREV = "${AUTOREV}"
 
 SRC_URI = "file://*"
 
-FILES_${PN} = "/var* /usr/bin/* /usr/lib/python2.7/* /usr/lib/python2.7/site-packages/twisted/web/* /usr/emu/* /usr/keys/* /usr/share/enigma2/defaults/* /usr/share/enigma2/* /usr/share/enigma2/rc_models/ini4/* /usr/share/enigma2/rc_models/red2/* /usr/lib/enigma2/python/Components/Converter/* /usr/lib/enigma2/python/Plugins/Extensions/Infopanel/data/* /usr/lib/enigma2/python/Plugins/Extensions/Infopanel/* /usr/scripts/*"
+FILES_${PN} = "/var* /usr/bin/* /usr/lib/python2.7/* /usr/lib/python2.7/site-packages/twisted/web/* /usr/emu/* /usr/keys/* /usr/share/enigma2/defaults/* /usr/share/enigma2/* /usr/share/enigma2/rc_models/ini4/* /usr/share/enigma2/rc_models/red2/* /usr/share/enigma2/po/de/LC_MESSAGES/* /usr/lib/enigma2/python/Components/Converter/* /usr/lib/enigma2/python/Plugins/Extensions/Infopanel/data/* /usr/lib/enigma2/python/Plugins/Extensions/Infopanel/* /usr/scripts/*"
 S = "${WORKDIR}"
 
 do_install() {
@@ -54,6 +54,13 @@ do_install() {
     do
         install -m 644 ${f} ${D}/usr/share/enigma2/defaults/${f}
     done
-}
+
+    install -d ${D}/usr/share/enigma2/po/de/LC_MESSAGES
+    for f in enigma2-neu.mo
+    do
+        install -m 644 ${f} ${D}/usr/share/enigma2/po/de/LC_MESSAGES/${f}
+    done
+
+ }
 do_populate_sysroot[noexec] = "1"
 do_package_qa[noexec] = "1"
