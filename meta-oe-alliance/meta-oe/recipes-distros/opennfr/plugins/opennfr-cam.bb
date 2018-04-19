@@ -61,6 +61,6 @@ do_install() {
         install -m 644 ${f} ${D}/usr/share/enigma2/po/de/LC_MESSAGES/${f}
     done
 
- }
+}
 do_populate_sysroot[noexec] = "1"
 do_package_qa[noexec] = "1"
