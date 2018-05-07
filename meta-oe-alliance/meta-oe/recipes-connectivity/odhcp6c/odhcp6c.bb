@@ -10,7 +10,7 @@ SRCREV = "${AUTOREV}"
 PV = "git${SRCPV}"
 PKGV = "git${GITPKGV}"
 
-SRC_URI = "git://github.com/openwrt/odhcp6c.git \
+SRC_URI = "git://github.com/openwrt/odhcp6c.git;protocol=https \
            file://ifup \
            file://ifdown \
            file://odhcp6c-update \
