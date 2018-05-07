@@ -10,7 +10,7 @@ SRCREV = "${AUTOREV}"
 PV = "git${SRCPV}"
 PKGV = "git${GITPKGV}"
 
-SRC_URI = "git://github.com/lede-project/source/tree/master/package/network/ipv6/odhcp6c.git \
+SRC_URI = "git://git.lede-project.org/project/odhcp6c.git;protocol=https \
            file://ifup \
            file://ifdown \
            file://odhcp6c-update \
