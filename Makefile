@@ -50,6 +50,7 @@ BBLAYERS ?= \
 	$(CURDIR)/meta-oe-alliance/meta-brands/meta-gigablue \
 	$(CURDIR)/meta-oe-alliance/meta-brands/meta-ini \
 	$(CURDIR)/meta-oe-alliance/meta-brands/meta-ixuss \
+	$(CURDIR)/meta-oe-alliance/meta-brands/meta-linkdroid \
 	$(CURDIR)/meta-oe-alliance/meta-brands/meta-broadmedia \
 	$(CURDIR)/meta-oe-alliance/meta-brands/meta-odin \
 	$(CURDIR)/meta-oe-alliance/meta-brands/meta-odroid \
@@ -712,6 +713,9 @@ MACHINEBUILD=twinboxlcdci5
 else ifeq ($(MACHINEBUILD),e4hdultra)
 MACHINE=8100s
 MACHINEBUILD=e4hdultra
+else ifeq ($(MACHINEBUILD),protek4k)
+MACHINE=8100s
+MACHINEBUILD=protek4k
 
 
 else ifeq ($(MACHINEBUILD),mbtwinplus)
