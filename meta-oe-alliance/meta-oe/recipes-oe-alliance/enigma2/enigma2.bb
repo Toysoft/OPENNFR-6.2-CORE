@@ -283,7 +283,7 @@ do_install_append() {
     ln -s ${libdir}/enigma2/python/Components/PackageInfo.pyo ${D}${libdir}/enigma2/python/Components/DreamboxInfoHandler.pyo
     install -d ${D}${sysconfdir}
     git --git-dir=${S}/.git log --since=10.weeks --pretty=format:"%s" > ${D}${sysconfdir}/e2-git.log
-    git --git-dir=${OE-ALLIANCE_BASE}/.git log --since=10.weeks --pretty=format:"%s" > ${D}${sysconfdir}/oe-git.log
+    git --git-dir=/home/harry/OPENNFR6.3/Buildumgebung/oe-alliance/.git log --since=10.weeks --pretty=format:"%s" > ${D}${sysconfdir}/oe-git.log
     if [ "${base_libdir}" = "/lib64" ] ; then
         install -d ${D}/usr/lib
         ln -s ${libdir}/enigma2 ${D}/usr/lib/enigma2
