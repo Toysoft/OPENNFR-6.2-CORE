@@ -10,7 +10,7 @@ ALLOW_EMPTY_${PN} = "1"
 PACKAGES = "${PN}"
 
 PV = "${IMAGE_VERSION}"
-PR = "r1"
+PR = "r3"
 
 OPTIONAL_WIFIDRIVERS = "${@bb.utils.contains("MACHINE_FEATURES", "wifiusblegacy", "enigma2-plugin-drivers-network-usb-rt3070", " \
     enigma2-plugin-drivers-network-usb-ath9k-htc \
@@ -27,9 +27,6 @@ OPTIONAL_WIFIDRIVERS = "${@bb.utils.contains("MACHINE_FEATURES", "wifiusblegacy"
 
 DEPENDS = "enigma2 enigma2-plugins enigma2-oe-alliance-plugins network-usb-drivers-meta"
 
-DEPENDS_remove_AML8726 = "network-usb-drivers-meta"
-DEPENDS_remove_AMLS905 = "network-usb-drivers-meta"
-DEPENDS_remove_AML905D = "network-usb-drivers-meta"
 
 RDEPENDS_${PN} = "\
     enigma2-plugin-systemplugins-wirelesslan \
