@@ -7,20 +7,21 @@ require conf/license/license-gplv2.inc
 inherit gitpkgv
 
 SRCREV = "${AUTOREV}"
-PV = "1.3+git${SRCPV}"
-PKGV = "1.3+git${GITPKGV}"
-VER="1.3"
+PV = "8.x+git${SRCPV}"
+PKGV = "8.x+git${GITPKGV}"
+VER="8.x"
 
 RDEPENDS_${PN} = "enigma2-plugin-extensions-weather_msn"
 
-SRC_URI="git://github.com/MCelliotG/GlamourAuraFHD-ATV-skin.git;protocol=git"
+#SRC_URI="git://github.com/MCelliotG/GlamourAuraFHD-ATV-skin.git;protocol=git"
+SRC_URI="git://github.com/atvcaptain/GlamourAuraFHD-ATV-skin.git;protocol=git"
 
 FILES_${PN} = "/usr/*"
 
 S = "${WORKDIR}/git"
 
 do_compile_append() {
-python -O -m compileall ${S}
+python -O -m compileall ${S}/usr
 }
 
 do_install() {
